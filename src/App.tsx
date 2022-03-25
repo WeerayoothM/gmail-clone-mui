@@ -9,6 +9,7 @@ import { StylesProvider, CssBaseline, createTheme } from "@material-ui/core";
 import AppFooter from "./components/AppFooter";
 import CustomSidebarTrigger from "./components/CustomSidebarTrigger";
 import AppHeader from "./components/AppHeader";
+import AppSidebar from "./components/AppSidebar";
 
 const scheme = Layout();
 
@@ -33,6 +34,7 @@ scheme.configureEdgeSidebar((builder) => {
       width: 256,
       collapsible: true,
       collapsedWidth: 72,
+      autoExpanded: true,
     });
 
   builder
@@ -66,7 +68,9 @@ function App() {
       >
         <CssBaseline />
         <AppHeader />
-        <DrawerSidebar sidebarId={"leftSidebar"}>Sidebar</DrawerSidebar>
+        <DrawerSidebar sidebarId={"leftSidebar"}>
+          <AppSidebar />
+        </DrawerSidebar>
         <DrawerSidebar sidebarId={"rightSidebar"}>Sidebar</DrawerSidebar>
         <CustomSidebarTrigger />
         <Content>Content</Content>
