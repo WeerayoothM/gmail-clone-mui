@@ -90,7 +90,7 @@ function AppSidebar() {
             />
             <GmailSidebarItem
               startIcon={seeMore ? <KeyboardArrowUp /> : <KeyboardArrowDown />}
-              label={seeMore ? "Less" : "More"}
+              label={!collapsed && (seeMore ? "Less" : "More")}
               onClick={handleSeeMore}
             />
             <Collapse in={seeMore} timeout="auto" unmountOnExit>

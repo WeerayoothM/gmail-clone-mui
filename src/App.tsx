@@ -10,6 +10,8 @@ import AppFooter from "./components/AppFooter";
 import CustomSidebarTrigger from "./components/CustomSidebarTrigger";
 import AppHeader from "./components/AppHeader";
 import AppSidebar from "./components/AppSidebar";
+import AppSubSidebar from "./components/AppSubSidebar";
+import AppContent from "./components/AppContent";
 
 const scheme = Layout();
 
@@ -71,9 +73,13 @@ function App() {
         <DrawerSidebar sidebarId={"leftSidebar"}>
           <AppSidebar />
         </DrawerSidebar>
-        <DrawerSidebar sidebarId={"rightSidebar"}>Sidebar</DrawerSidebar>
+        <DrawerSidebar sidebarId={"rightSidebar"}>
+          <AppSubSidebar />
+        </DrawerSidebar>
         <CustomSidebarTrigger />
-        <Content>Content</Content>
+        <Content>
+          <AppContent />
+        </Content>
         <AppFooter />
       </Root>
     </StylesProvider>
