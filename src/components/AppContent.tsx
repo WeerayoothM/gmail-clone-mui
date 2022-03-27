@@ -22,6 +22,7 @@ import { useSizedIconButtonStyles } from "@mui-treasury/styles/iconButton/sized"
 import ArrowMenu from "@mui-treasury/components/menu/arrow";
 import MenuListComposition from "./MenuListComposition";
 import { useRowGutterStyles } from "@mui-treasury/styles/gutter/row";
+import MailListItem from "./MailListItem";
 
 const Div = styled("div")`
   padding: 0 16px;
@@ -144,9 +145,26 @@ function AppContent() {
           </IconButton>
         </Box>
       </Div>
-      <Box>
-        <GmailTabsGroup />
-      </Box>
+      <GmailTabsGroup />
+      <MailListItem />
+      <MailListItem />
+      <MailListItem />
+      <MailListItem />
+      <MailListItem />
+      <MailListItem />
+      <MailListItem />
+      <MailListItem />
+      <MailListItem />
+      <MailListItem />
+      <MailListItem />
+      <MailListItem />
+      <MailListItem />
+      <MailListItem />
+      <MailListItem />
+      <MailListItem />
+      <MailListItem />
+      <MailListItem />
+      <MailListItem />
     </Box>
   );
 }
